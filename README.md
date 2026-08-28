@@ -1,4 +1,4 @@
-# I Do — Wedding Decoration & Event Planning Platform
+# I Do — Weddings
 
 Coursework project for **ICT2142 — E-Business Systems**, University of Ruhuna.
 Phase 2 (Core Development) — Week 03 deliverable: homepage and navigation UI.
@@ -23,7 +23,7 @@ and responsive behaviour, and hand-written CSS Grid/Flexbox shows that directly.
 ## Folder structure
 
 ```
-I-Do-Wedding-Platform/
+I-Do-Weddings/
 ├── index.html          # Homepage
 ├── css/
 │   └── style.css       # Tokens, layout, components, breakpoints
