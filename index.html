@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="I Do — wedding decoration packages and decor rentals in Sri Lanka." />
+  <meta name="description" content="I Do — wedding decoration packages and decor rentals in Sri Lanka. Browse themes, add items, book your date." />
   <title>I Do — Wedding Decoration &amp; Event Planning</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,7 +32,7 @@
           <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
           <path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
         </svg>
-        <label class="sr-only" for="site-search">Search packages</label>
+        <label class="sr-only" for="site-search">Search packages and rental items</label>
         <input id="site-search" type="search" placeholder="Search themes, backdrops, arches…" autocomplete="off" />
       </form>
 
@@ -46,21 +46,17 @@
       <div class="nav__actions">
         <button class="cart" id="cart-btn" aria-label="Booking list">
           <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M4 5h2l2.2 10.2a2 2 0 0 0 2 1.6h7.1a2 2 0 0 0 2-1.5L21 8H7"
-                  fill="none" stroke="currentColor" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 5h2l2.2 10.2a2 2 0 0 0 2 1.6h7.1a2 2 0 0 0 2-1.5L21 8H7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <circle cx="10.5" cy="20" r="1.4" fill="currentColor"/>
             <circle cx="18" cy="20" r="1.4" fill="currentColor"/>
           </svg>
           <span class="cart__badge" id="cart-count">0</span>
         </button>
 
-        <button class="burger" id="burger" aria-label="Open menu"
-                aria-expanded="false" aria-controls="nav-links">
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
           <span></span><span></span><span></span>
         </button>
       </div>
-
     </div>
   </header>
 
@@ -68,15 +64,15 @@
 
     <!-- ============ HERO ============ -->
     <section class="hero">
-
+      <!-- Signature element: strung fairy lights across the top of the hero -->
       <svg class="garland" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
         <path d="M0 8 Q 150 70 300 18 Q 450 70 600 18 Q 750 70 900 18 Q 1050 70 1200 8"
               fill="none" stroke="rgba(255,255,255,.22)" stroke-width="1.5"/>
         <g class="bulbs">
-          <circle cx="75"  cy="38" r="4"/><circle cx="150"  cy="46" r="4"/><circle cx="225"  cy="38" r="4"/>
-          <circle cx="375" cy="38" r="4"/><circle cx="450"  cy="46" r="4"/><circle cx="525"  cy="38" r="4"/>
-          <circle cx="675" cy="38" r="4"/><circle cx="750"  cy="46" r="4"/><circle cx="825"  cy="38" r="4"/>
-          <circle cx="975" cy="38" r="4"/><circle cx="1050" cy="46" r="4"/><circle cx="1125" cy="38" r="4"/>
+          <circle cx="75"   cy="38" r="4"/><circle cx="150" cy="46" r="4"/><circle cx="225" cy="38" r="4"/>
+          <circle cx="375"  cy="38" r="4"/><circle cx="450" cy="46" r="4"/><circle cx="525" cy="38" r="4"/>
+          <circle cx="675"  cy="38" r="4"/><circle cx="750" cy="46" r="4"/><circle cx="825" cy="38" r="4"/>
+          <circle cx="975"  cy="38" r="4"/><circle cx="1050" cy="46" r="4"/><circle cx="1125" cy="38" r="4"/>
         </g>
       </svg>
 
@@ -124,7 +120,7 @@
 
         <div class="grid" id="package-grid">
 
-          <article class="card" data-name="Rustic Romance rustic wood greenery outdoor">
+          <article class="card" data-name="Rustic Romance rustic wood greenery">
             <div class="card__media card__media--a"><span class="tag">Outdoor</span></div>
             <div class="card__body">
               <h3>Rustic Romance</h3>
@@ -137,7 +133,7 @@
             </div>
           </article>
 
-          <article class="card" data-name="Golden Hour marigold gold brass indoor">
+          <article class="card" data-name="Golden Hour marigold gold indoor">
             <div class="card__media card__media--b"><span class="tag">Best seller</span></div>
             <div class="card__body">
               <h3>Golden Hour</h3>
@@ -150,7 +146,7 @@
             </div>
           </article>
 
-          <article class="card" data-name="Poruwa Classic traditional kandyan jasmine">
+          <article class="card" data-name="Poruwa Classic traditional kandyan">
             <div class="card__media card__media--c"><span class="tag">Traditional</span></div>
             <div class="card__body">
               <h3>Poruwa Classic</h3>
@@ -176,7 +172,7 @@
             </div>
           </article>
 
-          <article class="card" data-name="Beach Vow coastal palm driftwood outdoor">
+          <article class="card" data-name="Beach Vow coastal palm outdoor">
             <div class="card__media card__media--e"><span class="tag">Coastal</span></div>
             <div class="card__body">
               <h3>Beach Vow</h3>
@@ -204,7 +200,7 @@
 
         </div>
 
-        <p class="empty" id="empty-state" hidden>No packages match that search. Try a theme name like &ldquo;rustic&rdquo; or &ldquo;poruwa&rdquo;.</p>
+        <p class="empty" id="empty-state" hidden>No packages match that search. Try a theme name like “rustic” or “poruwa”.</p>
       </div>
     </section>
 
@@ -248,7 +244,6 @@
         </ol>
       </div>
     </section>
-
   </main>
 
   <!-- ============ FOOTER ============ -->
@@ -303,6 +298,5 @@
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script src="js/main.js"></script>
-
 </body>
 </html>

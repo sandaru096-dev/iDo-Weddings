@@ -1,8 +1,13 @@
-﻿.DS_Store
+# OS
+.DS_Store
 Thumbs.db
+
+# Editors
 .vscode/
 .idea/
 *.swp
+
+# Dependencies / build
 node_modules/
 dist/
 .env
