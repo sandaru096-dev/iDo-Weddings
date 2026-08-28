@@ -5,49 +5,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="I Do — wedding decoration packages and decor rentals in Sri Lanka." />
   <title>I Do — Wedding Decoration &amp; Event Planning</title>
-  <link rel="stylesheet" href="css/style.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header class="nav" id="nav">
-  <div class="nav__inner container">
 
-    <a class="brand" href="index.html">
-      <svg class="brand__mark" viewBox="0 0 40 24" aria-hidden="true">
-        <circle cx="14" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
-        <circle cx="26" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
-      </svg>
-      <span class="brand__name">I&nbsp;Do</span>
-    </a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <form class="search" role="search" onsubmit="return false;">
-      <label class="sr-only" for="site-search">Search packages</label>
-      <input id="site-search" type="search" placeholder="Search themes, backdrops, arches…" />
-    </form>
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
 
-    <nav class="nav__links" id="nav-links">
-      <a href="index.html" class="is-active">Home</a>
-      <a href="#packages">Packages</a>
-      <a href="#rentals">Rentals</a>
-      <a href="#about">About</a>
-    </nav>
-
-    <div class="nav__actions">
-      <button class="cart" id="cart-btn" aria-label="Booking list">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M4 5h2l2.2 10.2a2 2 0 0 0 2 1.6h7.1a2 2 0 0 0 2-1.5L21 8H7"
-                fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="10.5" cy="20" r="1.4" fill="currentColor"/>
-          <circle cx="18" cy="20" r="1.4" fill="currentColor"/>
+      <a class="brand" href="index.html" aria-label="I Do home">
+        <svg class="brand__mark" viewBox="0 0 40 24" aria-hidden="true">
+          <circle cx="14" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+          <circle cx="26" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
         </svg>
-        <span class="cart__badge" id="cart-count">0</span>
-      </button>
-    </div>
+        <span class="brand__name">I&nbsp;Do</span>
+      </a>
 
-  </div>
-</header>
+      <form class="search" role="search" onsubmit="return false;">
+        <svg class="search__icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <label class="sr-only" for="site-search">Search packages</label>
+        <input id="site-search" type="search" placeholder="Search themes, backdrops, arches…" autocomplete="off" />
+      </form>
+
+      <nav class="nav__links" id="nav-links" aria-label="Main">
+        <a href="index.html" class="is-active">Home</a>
+        <a href="#packages">Packages</a>
+        <a href="#rentals">Rentals</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="cart" id="cart-btn" aria-label="Booking list">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 5h2l2.2 10.2a2 2 0 0 0 2 1.6h7.1a2 2 0 0 0 2-1.5L21 8H7"
+                  fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="10.5" cy="20" r="1.4" fill="currentColor"/>
+            <circle cx="18" cy="20" r="1.4" fill="currentColor"/>
+          </svg>
+          <span class="cart__badge" id="cart-count">0</span>
+        </button>
+
+        <button class="burger" id="burger" aria-label="Open menu"
+                aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+
+      <svg class="garland" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 8 Q 150 70 300 18 Q 450 70 600 18 Q 750 70 900 18 Q 1050 70 1200 8"
+              fill="none" stroke="rgba(255,255,255,.22)" stroke-width="1.5"/>
+        <g class="bulbs">
+          <circle cx="75"  cy="38" r="4"/><circle cx="150"  cy="46" r="4"/><circle cx="225"  cy="38" r="4"/>
+          <circle cx="375" cy="38" r="4"/><circle cx="450"  cy="46" r="4"/><circle cx="525"  cy="38" r="4"/>
+          <circle cx="675" cy="38" r="4"/><circle cx="750"  cy="46" r="4"/><circle cx="825"  cy="38" r="4"/>
+          <circle cx="975" cy="38" r="4"/><circle cx="1050" cy="46" r="4"/><circle cx="1125" cy="38" r="4"/>
+        </g>
+      </svg>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Decor packages &amp; rentals · Sri Lanka</p>
+          <h1>Book the room<br /><em>before</em> you book the worry.</h1>
+          <p class="lede">
+            Pick a decoration theme, add the pieces you want, choose your date and venue.
+            We set up, we take it down. You get married.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--solid" href="#packages">Browse packages</a>
+            <a class="btn btn--ghost" href="#rentals">Rent single items</a>
+          </div>
+
+          <dl class="stats">
+            <div><dt>Themes</dt><dd>18</dd></div>
+            <div><dt>Rental pieces</dt><dd>240+</dd></div>
+            <div><dt>Setup included</dt><dd>Always</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <div class="arch">
+            <div class="arch__inner">
+              <span class="arch__label">Fairy Light Arch</span>
+              <span class="arch__price">From LKR 32,000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
 </body>
 </html>
